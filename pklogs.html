@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>嘉实多</title>
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/lavish-bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<header>
+	<div class="pull-left title">
+		Castorl Online Micro-Marketing System
+	</div>
+	<div class="pull-right">
+		<div class="btn-group" role="group">
+			<a href="javascript:;" class="btn btn-default">{{adminname}}</a>
+			<a href="javascript:;" class="btn btn-default" ng-click="logout()">退出登录</a>
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="menu-scroll-container scrollable default-skin">
+		<ul class="list-group">
+			<a href="{{menuItemData[0].link}}" class="list-group-item" ng-class="{'active':cpage==1}">
+				{{menuItemData[0].text}}
+			</a>
+			<li class="list-group-item" ng-show="!$first" ng-repeat="item in menuItemData">
+				{{item.text}}
+				<ul class="list-group">
+					<a href="{{item1.link}}" class="list-group-item" ng-repeat="item1 in item.childs" ng-class="{'active':cpage==item1.text}">{{item1.text}}</a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</aside>
+<main>
+	<div class="container">
+		<div class="col-xs-12 col-padding">
+			<!-- <input type="text" class="form-control input_1" placeholder="输入Openid" ng-model="keyword">
+			<button class="btn btn-primary" ng-click="searchEvent()">搜索</button> -->
+			<!-- <div class="pull-right">
+				<button class="btn btn-danger" ng-click="delCourseLogs()">删除</button>
+				<a href="javascript:;" class="btn btn-info" ng-click="exportCourseLogs()">导出</a>
+			</div> -->
+		</div>
+		<div class="col-xs-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<!-- <th><label><input type="checkbox" ng-model="checkall" ng-click="checkAllEvent()"> 全选</label></th> -->
+						<th>PK人1 Openid</th>
+						<th>PK人2 Openid</th>
+						<th>PK人1 答对否</th>
+						<th>PK人2 答对否</th>
+						<th>PK 结果</th>
+						<th>PK台</th>
+						<th>记录时间</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="table_list">
+					<tr ng-repeat="item in loglist" ng-click="tdclickEvent($index,$event)">
+						<!-- <td><input type="checkbox" value="{{item.Id}}"></td> -->
+						<td>{{item.open_id1}}</td>
+						<td>{{item.open_id2}}</td>
+						<td>{{item.answer1}}</td>
+						<td>{{item.answer2}}</td>
+						<td>{{item.pkresult}}</td>
+						<td>{{item.pk_plt}}</td>
+						<td>{{item.creattime}}</td>
+						<td><a href="javascript:;" class="btn btn-info" ng-click="getLogDetail($index)">查看详情</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<nav aria-label="Page navigation" class="paging">
+			<ul class="pagination">
+				<li ng-class="{'disabled':curr_page==1}" ng-click="pageClick(1)">
+					<a href="javascript:;" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li ng-repeat="item in pagearr" ng-class="{'active':item==curr_page}" ng-click="pageClick(item)"><a href="javascript:;">{{item}}</a></li>
+				<li ng-class="{'disabled':curr_page==total_pages}" ng-click="pageClick(total_pages)">
+					<a href="javascript:;" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</main>
+<!-- Modal -->
+<div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-show="showtan">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="showtan=false"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">PK日志-详情</h4>
+			</div>
+			<div class="modal-body">
+				<table class="table">
+					<tr><th>PK发起方 Openid：</th><td>{{pkinfodetail.open_id1}}</td></tr>
+					<tr><th>PK接受方 Openid：</th><td>{{pkinfodetail.open_id2}}</td></tr>
+					<tr><th>PK发起方 答题结果：</th><td>{{pkinfodetail.answer1}}</td></tr>
+					<tr><th>PK接受方 答题结果：</th><td>{{pkinfodetail.answer2}}</td></tr>
+					<tr><th>PK结果：</th><td>{{pkinfodetail.pkresult}}</td></tr>
+					<tr><th>PK台：</th><td>{{pkinfodetail.pk_plt}}</td></tr>
+					<tr><th>PK题目：</th><td>{{pkinfodetail.issue}}</td></tr>
+					<tr><th>PK题目所属产品线：</th><td>{{pkinfodetail.line}}</td></tr>
+					<tr><th>PK题目所属知识点：</th><td>{{pkinfodetail.knowledge}}</td></tr>
+					<tr><th>PK发起方 昵称：</th><td>{{pkinfodetail.nick_name1}}</td></tr>
+					<tr><th>PK接受方 昵称：</th><td>{{pkinfodetail.nick_name2}}</td></tr>
+					<tr><th>PK发起方 答题时间：</th><td>{{pkinfodetail.consume_time1}}</td></tr>
+					<tr><th>PK接受方 答题时间：</th><td>{{pkinfodetail.consume_time2}}</td></tr>
+					<tr><th>PK记录时间：</th><td>{{pkinfodetail.creattime}}</td></tr>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-info" ng-click="showtan=false">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="dist/js/common.js"></script>
+<script src="dist/js/pklogs.js"></script>
+</body>
+</html>

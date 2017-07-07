@@ -1,0 +1,33 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "datas": [
+            {
+                "Region": "东北"
+            },
+            {
+                "Region": "华北"
+            },
+            {
+                "Region": "华东"
+            },
+            {
+                "Region": "华南"
+            },
+            {
+                "Region": "华西"
+            },
+            {
+                "Region": "华中"
+            },
+            {
+                "Region": "西北"
+            },
+            {
+                "Region": "西南"
+            }
+        ]
+    }
+}

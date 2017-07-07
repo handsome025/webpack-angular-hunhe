@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>嘉实多</title>
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/lavish-bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<header>
+	<div class="pull-left title">
+		Castorl Online Micro-Marketing System
+	</div>
+	<div class="pull-right">
+		<div class="btn-group" role="group">
+			<a href="javascript:;" class="btn btn-default">{{adminname}}</a>
+			<a href="javascript:;" class="btn btn-default" ng-click="logout()">退出登录</a>
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="menu-scroll-container scrollable default-skin">
+		<ul class="list-group">
+			<a href="{{menuItemData[0].link}}" class="list-group-item" ng-class="{'active':cpage==1}">
+				{{menuItemData[0].text}}
+			</a>
+			<li class="list-group-item" ng-show="!$first" ng-repeat="item in menuItemData">
+				{{item.text}}
+				<ul class="list-group">
+					<a href="{{item1.link}}" class="list-group-item" ng-repeat="item1 in item.childs" ng-class="{'active':cpage==item1.text}">{{item1.text}}</a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</aside>
+<main>
+	<div class="container">
+		<div class="col-xs-12 col-padding">
+			<!-- <input type="text" class="form-control input_1" placeholder="输入Openid/昵称/手机号" ng-model="keyword">
+			<button class="btn btn-primary" ng-click="searchEvent()">搜索</button> -->
+			<div class="pull-left">
+				<button class="btn btn-primary" ng-click="addPrize()">新增奖品</button>
+				<button class="btn btn-danger" ng-click="delPrize()">删除</button>
+				<!-- <a href="javascript:;" class="btn btn-info" ng-click="exportCourseLogs()">导出</a> -->
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th><label><input type="checkbox" ng-model="checkall" ng-click="checkAllEvent()"> 全选</label></th>
+						<th>奖品名称</th>
+						<th>奖品图片</th>
+						<th>所需积分</th>
+						<th>可领取数量</th>
+						<th>限制领取次数</th>
+						<th>领取时间</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody id="table_list">
+					<tr ng-repeat="item in prizelist" ng-click="tdclickEvent($index,$event)">
+						<td><input type="checkbox" value="{{item.Id}}" ng-click="tdclickEvent($index,$event)"></td>
+						<td>{{item.Name}}</td>
+						<td><img src="" ng-src="{{item.Img}}"></td>
+						<td>{{item.Score}}</td>
+						<td>{{item.TotalNumber}}</td>
+						<td>{{item.Number}}</td>
+						<td>{{item.BeginTime}}~{{item.EndTime}}</td>
+						<td><a href="javascript:;" class="btn btn-info" ng-click="editPrize($index)">编辑</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- <nav aria-label="Page navigation" class="paging">
+			<ul class="pagination">
+				<li ng-class="{'disabled':curr_page==1}" ng-click="pageClick(1)">
+					<a href="javascript:;" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li ng-repeat="item in pagearr" ng-class="{'active':item==curr_page}" ng-click="pageClick(item)"><a href="javascript:;">{{item}}</a></li>
+				<li ng-class="{'disabled':curr_page==total_pages}" ng-click="pageClick(total_pages)">
+					<a href="javascript:;" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav> -->
+	</div>
+</main>
+<!-- Modal -->
+<div class="modal prize-rule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ng-show="showtan">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" ng-click="showtan=false"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">领取规则</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+				    <label class="col-sm-3 control-label">奖品名称：</label>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control" id="Name">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label class="col-sm-3 control-label">奖品图片：</label>
+				    <div class="col-sm-8 form-upload" >
+				    	<form action="" method="post" class="form" enctype="multipart/form-data">
+				    		<img src="" id="Img">
+				    		<input name="pic" type="file" class="form-control upload">
+				    		<input type="submit" class="submit">
+				    		<label class="control-label">点击上传</label>
+				    	</form>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label  class="col-sm-3 control-label">所需积分：</label>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control" id="Score">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label  class="col-sm-3 control-label">可领数量：</label>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control" id="TotalNumber">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label  class="col-sm-3 control-label">限领次数：</label>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control" id="Number" >
+				    </div>
+				  </div>
+				  <div class="form-group parze-date">
+				    <label  class="col-sm-3 control-label">领取时间：</label>
+				    <div class="col-sm-8">
+				    	<input type="text" class="form-control form_start" id="BeginTime" >至
+				    	<input type="text" class="form-control form_end" id="EndTime" >
+				    </div>
+				  </div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-info" ng-click="prizeSubmit()">确定</button>
+				<button type="button" class="btn btn-info" ng-click="showtan=false">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="dist/js/common.js"></script>
+<script src="dist/js/prizerule.js"></script>
+</body>
+</html>

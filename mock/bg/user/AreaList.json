@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "datas": [
+            {
+                "Area": "华南"
+            },
+            {
+                "Area": "华北"
+            },
+            {
+                "Area": "华中"
+            },
+            {
+                "Area": "西北"
+            }
+        ]
+    }
+}

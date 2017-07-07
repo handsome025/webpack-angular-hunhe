@@ -1,0 +1,167 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "total": 13,
+        "page_total": 1,
+        "datas": [
+            {
+                "StoreId": 8,
+                "StoreName": "测试门店9",
+                "Province": "河南",
+                "City": "",
+                "Area": "",
+                "Region": "华中",
+                "CScore": 605,
+                "MScore": 510,
+                "AvgMScore": 51,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 29,
+                "StoreName": "测试门店30",
+                "Province": "河南",
+                "City": "",
+                "Area": "",
+                "Region": "华中",
+                "CScore": 600,
+                "MScore": 500,
+                "AvgMScore": 50,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 50,
+                "StoreName": "测试门店51",
+                "Province": "天津",
+                "City": "",
+                "Area": "",
+                "Region": "华北",
+                "CScore": 505,
+                "MScore": 400,
+                "AvgMScore": 40,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 4,
+                "StoreName": "测试门店5",
+                "Province": "湖南",
+                "City": "",
+                "Area": "",
+                "Region": "华中",
+                "CScore": 340,
+                "MScore": 360,
+                "AvgMScore": 36,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 19,
+                "StoreName": "测试门店20",
+                "Province": "海南",
+                "City": "",
+                "Area": "",
+                "Region": "华南",
+                "CScore": 325,
+                "MScore": 225,
+                "AvgMScore": 22,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 30,
+                "StoreName": "测试门店31",
+                "Province": "内蒙古",
+                "City": "",
+                "Area": "",
+                "Region": "华北",
+                "CScore": 270,
+                "MScore": 170,
+                "AvgMScore": 17,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 1,
+                "StoreName": "铭成伟测试门店0",
+                "Province": "北京",
+                "City": "",
+                "Area": "",
+                "Region": "华北",
+                "CScore": 105,
+                "MScore": -10,
+                "AvgMScore": -1,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 2,
+                "StoreName": "测试门店3",
+                "Province": "广西",
+                "City": "",
+                "Area": "",
+                "Region": "华南",
+                "CScore": 100,
+                "MScore": 60,
+                "AvgMScore": 6,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 1,
+                "StoreName": "铭成伟测试门店0",
+                "Province": "内蒙古",
+                "City": "",
+                "Area": "",
+                "Region": "华北",
+                "CScore": 100,
+                "MScore": 340,
+                "AvgMScore": 34,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 1,
+                "StoreName": "铭成伟测试门店0",
+                "Province": "海南",
+                "City": "",
+                "Area": "",
+                "Region": "华南",
+                "CScore": 100,
+                "MScore": 180,
+                "AvgMScore": 18,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 5,
+                "StoreName": "测试门店6",
+                "Province": "广西",
+                "City": "",
+                "Area": "",
+                "Region": "华南",
+                "CScore": 100,
+                "MScore": 140,
+                "AvgMScore": 14,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 10,
+                "StoreName": "测试门店11",
+                "Province": "天津",
+                "City": "",
+                "Area": "",
+                "Region": "华北",
+                "CScore": 95,
+                "MScore": -5,
+                "AvgMScore": 0,
+                "StorePeople": 10
+            },
+            {
+                "StoreId": 1,
+                "StoreName": "铭成伟测试门店0",
+                "Province": "广西",
+                "City": "",
+                "Area": "",
+                "Region": "华南",
+                "CScore": 95,
+                "MScore": -10,
+                "AvgMScore": -1,
+                "StorePeople": 10
+            }
+        ]
+    }
+}

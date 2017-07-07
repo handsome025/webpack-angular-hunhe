@@ -1,0 +1,146 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "total": 6006,
+        "page_total": 401,
+        "datas": [
+            {
+                "Id": 6018,
+                "OpenId": "67c8fa9c2c28473dada64b309a3f7259",
+                "NickName": "嘉实多测试用户6009",
+                "Mobile": "18223057971",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6017,
+                "OpenId": "2090721a721a4baf8853108bca5fc488",
+                "NickName": "嘉实多测试用户6008",
+                "Mobile": "15930959332",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6016,
+                "OpenId": "34abd48288994215a6338e0b82f29cbe",
+                "NickName": "嘉实多测试用户6007",
+                "Mobile": "18738860695",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6015,
+                "OpenId": "ca5cb747a1a64e58bcf6afe117b81316",
+                "NickName": "嘉实多测试用户6006",
+                "Mobile": "15546762058",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6014,
+                "OpenId": "488ed4a16f4347bcabf7046f304e9c7a",
+                "NickName": "嘉实多测试用户6005",
+                "Mobile": "18354663421",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6013,
+                "OpenId": "fb94f8bc438f4086b04a34f9d2c5a856",
+                "NickName": "嘉实多测试用户6004",
+                "Mobile": "15162564783",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6012,
+                "OpenId": "904896e47d404e8d855216509b361ddb",
+                "NickName": "嘉实多测试用户6003",
+                "Mobile": "18870466145",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6011,
+                "OpenId": "a4e6ddbb9588407993f950641d78f32c",
+                "NickName": "嘉实多测试用户6002",
+                "Mobile": "15678367508",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6010,
+                "OpenId": "20a5190736074c6e9e497ec963b6378d",
+                "NickName": "嘉实多测试用户6001",
+                "Mobile": "18486268870",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 6009,
+                "OpenId": "847926fd90a8497a9a966049fa8fb051",
+                "NickName": "嘉实多测试用户6000",
+                "Mobile": "15294170233",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 5996,
+                "OpenId": "805ef583531b47d78449ab22a5a26993",
+                "NickName": "嘉实多测试用户5997",
+                "Mobile": "",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 5995,
+                "OpenId": "e6cb803544ca4499aad6fa4f2ae9b7c6",
+                "NickName": "嘉实多测试用户5996",
+                "Mobile": "",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 5994,
+                "OpenId": "cee8ecba8e1448dc92ddc021f88c20c5",
+                "NickName": "嘉实多测试用户5995",
+                "Mobile": "",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 5993,
+                "OpenId": "b36ff609d02744d4bbd436692fe08a0b",
+                "NickName": "嘉实多测试用户5994",
+                "Mobile": "",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            },
+            {
+                "Id": 5992,
+                "OpenId": "d41544fe8c9b4bcbab856fd4243625ed",
+                "NickName": "嘉实多测试用户5993",
+                "Mobile": "",
+                "JH": 0,
+                "CH": 0,
+                "JJH": 0
+            }
+        ]
+    }
+}

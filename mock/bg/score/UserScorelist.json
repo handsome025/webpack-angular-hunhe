@@ -1,0 +1,128 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "total": 13,
+        "page_total": 1,
+        "datas": [
+            {
+                "Id": 80,
+                "OpenId": "f3c724141f444e4b8efbe1b3bc6565ce",
+                "NickName": "嘉实多测试用户80",
+                "Mobile": "",
+                "StoreName": "测试门店9",
+                "CurrentScore": 605,
+                "MonthScore": 510
+            },
+            {
+                "Id": 287,
+                "OpenId": "e0644e90847f4c459d6bd258ad423f23",
+                "NickName": "嘉实多测试用户287",
+                "Mobile": "",
+                "StoreName": "测试门店30",
+                "CurrentScore": 600,
+                "MonthScore": 500
+            },
+            {
+                "Id": 499,
+                "OpenId": "5f97681d0ab7438b93695b50c85778fa",
+                "NickName": "嘉实多测试用户499",
+                "Mobile": "",
+                "StoreName": "测试门店51",
+                "CurrentScore": 505,
+                "MonthScore": 400
+            },
+            {
+                "Id": 38,
+                "OpenId": "7f44484e79964845b255be9473f7d310",
+                "NickName": "嘉实多测试用户38",
+                "Mobile": "",
+                "StoreName": "测试门店5",
+                "CurrentScore": 340,
+                "MonthScore": 360
+            },
+            {
+                "Id": 184,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "NickName": "嘉实多测试用户184",
+                "Mobile": "",
+                "StoreName": "测试门店20",
+                "CurrentScore": 325,
+                "MonthScore": 225
+            },
+            {
+                "Id": 300,
+                "OpenId": "597a086a4d254d6a966651a20a44e5a4",
+                "NickName": "嘉实多测试用户300",
+                "Mobile": "",
+                "StoreName": "测试门店31",
+                "CurrentScore": 270,
+                "MonthScore": 170
+            },
+            {
+                "Id": 11,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "NickName": "嘉实多测试用户11",
+                "Mobile": "",
+                "StoreName": "铭成伟测试门店0",
+                "CurrentScore": 105,
+                "MonthScore": -10
+            },
+            {
+                "Id": 50,
+                "OpenId": "032a0511fd6b4157acac0de5653b6370",
+                "NickName": "嘉实多测试用户50",
+                "Mobile": "",
+                "StoreName": "测试门店6",
+                "CurrentScore": 100,
+                "MonthScore": 140
+            },
+            {
+                "Id": 12,
+                "OpenId": "6a5b5ac57e6e4667ac29f69c1a2a1d81",
+                "NickName": "嘉实多测试用户12",
+                "Mobile": "",
+                "StoreName": "测试门店3",
+                "CurrentScore": 100,
+                "MonthScore": 60
+            },
+            {
+                "Id": 10,
+                "OpenId": "b59cc078eea0447297ae88d4d7140748",
+                "NickName": "嘉实多测试用户10",
+                "Mobile": "",
+                "StoreName": "铭成伟测试门店0",
+                "CurrentScore": 100,
+                "MonthScore": 180
+            },
+            {
+                "Id": 7,
+                "OpenId": "7da80ff64f564d618808e42f5c02bd2b",
+                "NickName": "嘉实多测试用户7",
+                "Mobile": "",
+                "StoreName": "铭成伟测试门店0",
+                "CurrentScore": 100,
+                "MonthScore": 340
+            },
+            {
+                "Id": 6,
+                "OpenId": "db52c86f742d43f3a45f6f2d0b0030a5",
+                "NickName": "嘉实多测试用户6",
+                "Mobile": "",
+                "StoreName": "铭成伟测试门店0",
+                "CurrentScore": 95,
+                "MonthScore": -10
+            },
+            {
+                "Id": 97,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "NickName": "嘉实多测试用户97",
+                "Mobile": "",
+                "StoreName": "测试门店11",
+                "CurrentScore": 95,
+                "MonthScore": -5
+            }
+        ]
+    }
+}

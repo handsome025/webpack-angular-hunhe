@@ -1,0 +1,47 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": [
+        {
+            "Id": 4,
+            "Name": "测试奖品4",
+            "Img": "http://160518fg0253manage.dev.umaman.com/Image/10.jpg",
+            "BeginTime": "2017/4/13 11:38:00",
+            "EndTime": "2017/8/20 12:38:00",
+            "Score": 50,
+            "TotalNumber": 98,
+            "Number": 1
+        },
+        {
+            "Id": 3,
+            "Name": "测试奖品3",
+            "Img": "http://160518fg0253manage.dev.umaman.com/Image/10.jpg",
+            "BeginTime": "2017/4/13 11:38:00",
+            "EndTime": "2017/8/20 12:38:00",
+            "Score": 40,
+            "TotalNumber": 98,
+            "Number": 1
+        },
+        {
+            "Id": 2,
+            "Name": "测试奖品2",
+            "Img": "http://160518fg0253manage.dev.umaman.com/Image/10.jpg",
+            "BeginTime": "2017/4/13 11:38:00",
+            "EndTime": "2017/8/20 12:38:00",
+            "Score": 30,
+            "TotalNumber": 99,
+            "Number": 1
+        },
+        {
+            "Id": 1,
+            "Name": "测试奖品1",
+            "Img": "http://160518fg0253manage.dev.umaman.com/Image/10.jpg",
+            "BeginTime": "2021/3/5 11:11:00",
+            "EndTime": "2021/3/10 10:06:00",
+            "Score": 20,
+            "TotalNumber": 91,
+            "Number": 1
+        }
+    ]
+}

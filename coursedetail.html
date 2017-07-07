@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>嘉实多</title>
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/lavish-bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<header>
+	<div class="pull-left title">
+		Castorl Online Micro-Marketing System
+	</div>
+	<div class="pull-right">
+		<div class="btn-group" role="group">
+			<a href="javascript:;" class="btn btn-default">{{adminname}}</a>
+			<a href="javascript:;" class="btn btn-default" ng-click="logout()">退出登录</a>
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="menu-scroll-container scrollable default-skin">
+		<ul class="list-group">
+			<a href="{{menuItemData[0].link}}" class="list-group-item" ng-class="{'active':cpage==1}">
+				{{menuItemData[0].text}}
+			</a>
+			<li class="list-group-item" ng-show="!$first" ng-repeat="item in menuItemData">
+				{{item.text}}
+				<ul class="list-group">
+					<a href="{{item1.link}}" class="list-group-item" ng-repeat="item1 in item.childs" ng-class="{'active':cpage==item1.text}">{{item1.text}}</a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</aside>
+<main>
+	<div class="container">
+		<div class="col-xs-12 col-padding">
+			<input type="text" class="form-control input_1" placeholder="输入Openid/昵称/手机号" ng-model="keyword">
+			<button class="btn btn-primary" ng-click="searchEvent()">搜索</button>
+			<div class="pull-right">
+				<!-- <button class="btn btn-danger" ng-click="delCourseLogs()">删除</button> -->
+				<a href="javascript:;" class="btn btn-info" ng-click="exportCourseLogs()">导出</a>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th><label><input type="checkbox" ng-model="checkall" ng-click="checkAllEvent()"> 全选</label></th>
+						<th>Openid</th>
+						<th>课程</th>
+						<th>答题结果</th>
+						<th>是否通过</th>
+						<th>答题时长</th>
+						<th>记录时间</th>
+					</tr>
+				</thead>
+				<tbody id="table_list">
+					<tr ng-repeat="item in courselist" ng-click="tdclickEvent($index)">
+						<td><input type="checkbox" value="{{item.Id}}" ng-click="tdclickEvent($index)"></td>
+						<td>{{item.OpenId}}</td>
+						<td>{{item.Course}}</td>
+						<td>{{item.Result}}</td>
+						<td>{{!item.IsBaseRight?'未':''}}通过</td>
+						<td>{{getSeconds(item.AnswerTime)}}秒</td>
+						<td>{{item.CreateTime}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<nav aria-label="Page navigation" class="paging">
+			<ul class="pagination">
+				<li ng-class="{'disabled':curr_page==1}" ng-click="pageClick(1)">
+					<a href="javascript:;" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li ng-repeat="item in pagearr" ng-class="{'active':item==curr_page}" ng-click="pageClick(item)"><a href="javascript:;">{{item}}</a></li>
+				<li ng-class="{'disabled':curr_page==total_pages}" ng-click="pageClick(total_pages)">
+					<a href="javascript:;" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</main>
+<script src="dist/js/common.js"></script>
+<script src="dist/js/coursedetail.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "total": 7,
+        "page_total": 1,
+        "datas": [
+            {
+                "Id": 13,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "Course": "磁护一阶",
+                "Result": "10101",
+                "RightCount": 3,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/6/7 16:48:06",
+                "AnswerTime": "00:00:28"
+            },
+            {
+                "Id": 12,
+                "OpenId": "oZDVqt24C36-aUCYNoh7NR9-jrEU",
+                "Course": "极护一阶",
+                "Result": "11111",
+                "RightCount": 5,
+                "IsBaseRight": true,
+                "IsFinish": true,
+                "CreateTime": "2017/6/5 18:19:32",
+                "AnswerTime": "00:00:27"
+            },
+            {
+                "Id": 11,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "Course": "磁护一阶",
+                "Result": "10100",
+                "RightCount": 2,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/5/26 12:26:02",
+                "AnswerTime": "00:00:13"
+            },
+            {
+                "Id": 10,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "Course": "磁护一阶",
+                "Result": "10100",
+                "RightCount": 2,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/5/26 12:25:48",
+                "AnswerTime": "00:00:22"
+            },
+            {
+                "Id": 9,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "Course": "磁护一阶",
+                "Result": "10100",
+                "RightCount": 2,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/5/26 12:25:08",
+                "AnswerTime": "00:00:21"
+            },
+            {
+                "Id": 8,
+                "OpenId": "d6d6611f88254a169982c405800e7583",
+                "Course": "磁护一阶",
+                "Result": "10000",
+                "RightCount": 1,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/5/19 10:56:21",
+                "AnswerTime": "00:00:16"
+            },
+            {
+                "Id": 7,
+                "OpenId": "b59cc078eea0447297ae88d4d7140748",
+                "Course": "磁护一阶",
+                "Result": "10100",
+                "RightCount": 2,
+                "IsBaseRight": false,
+                "IsFinish": false,
+                "CreateTime": "2017/5/19 10:29:27",
+                "AnswerTime": "00:19:50"
+            }
+        ]
+    }
+}

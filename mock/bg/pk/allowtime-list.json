@@ -1,0 +1,17 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": [
+        {
+            "id": 1,
+            "beginHour": 9,
+            "endHour": 12
+        },
+        {
+            "id": 2,
+            "beginHour": 13,
+            "endHour": 20
+        }
+    ]
+}

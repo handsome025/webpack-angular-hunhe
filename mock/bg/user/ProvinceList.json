@@ -1,0 +1,78 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "datas": [
+            {
+                "Province": "安徽"
+            },
+            {
+                "Province": "北京"
+            },
+            {
+                "Province": "福建"
+            },
+            {
+                "Province": "广东"
+            },
+            {
+                "Province": "广西"
+            },
+            {
+                "Province": "海南"
+            },
+            {
+                "Province": "河北"
+            },
+            {
+                "Province": "河南"
+            },
+            {
+                "Province": "湖北"
+            },
+            {
+                "Province": "湖南"
+            },
+            {
+                "Province": "吉林"
+            },
+            {
+                "Province": "江苏"
+            },
+            {
+                "Province": "江西"
+            },
+            {
+                "Province": "辽宁"
+            },
+            {
+                "Province": "内蒙古"
+            },
+            {
+                "Province": "山东"
+            },
+            {
+                "Province": "山西"
+            },
+            {
+                "Province": "陕西"
+            },
+            {
+                "Province": "上海"
+            },
+            {
+                "Province": "天津"
+            },
+            {
+                "Province": "新疆"
+            },
+            {
+                "Province": "浙江"
+            },
+            {
+                "Province": "重庆"
+            }
+        ]
+    }
+}

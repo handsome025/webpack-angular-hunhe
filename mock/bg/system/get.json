@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "Name": "day_course_limit",
+        "ID": 0,
+        "Values": "3",
+        "Remark": "每日每课程参与次数限制",
+        "CreateTime": "2017-05-05T15:41:02"
+    }
+}

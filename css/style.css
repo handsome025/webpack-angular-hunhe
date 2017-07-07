@@ -1,0 +1,284 @@
+@bordercolor:#3E7077;
+
+body {opacity:0;}
+.none {display:none;}
+
+header {
+	height:65px;padding:15px;
+	border-bottom:1px solid @bordercolor;
+	.title {
+		font-size:18px;font-weight:bold;line-height:35px;
+	}
+}
+aside {
+	position:absolute;top:80px;left:0;bottom:0;overflow-y:auto;
+	width:200px;
+}
+main {
+	position:absolute;top:80px;left:200px;right:0;bottom:0;overflow:auto;
+}
+
+.list-group .list-group {
+	margin-top:10px;margin-bottom:0;
+}
+.table {
+	border:1px solid #363F84;
+	th,td {
+		text-align:center;
+	}
+	label {margin-bottom:0;}
+}
+.input_1 {
+	display:inline-block;vertical-align:middle;
+	width:250px;
+}
+.input_2 {
+	display:inline-block;vertical-align:middle;
+	width:120px;
+}
+.col-padding {
+	padding-bottom:15px;
+}
+.paging {
+	clear:both;
+	text-align:center;
+}
+.modal {
+	display:block;
+	.table th {
+		width:160px;
+	}
+	.table th,.table td {
+		text-align:left;
+	}
+}
+.file {
+	float:left;
+	width:240px;
+}
+.ml80{
+	margin-left: 80px;
+}
+.ml15{
+	margin-left: 15px;
+}
+
+.div_list {
+	padding:5px 0;
+}
+
+.sorting_desc{
+    background: url(http://sandbox.runjs.cn/uploads/rs/238/n8vhm36h/sort_desc.png) no-repeat center right;
+}
+
+.sorting_both{
+	background: url(http://sandbox.runjs.cn/uploads/rs/238/n8vhm36h/sort_both.png) no-repeat center right;
+}
+.sorting_asc{
+    background: url(http://sandbox.runjs.cn/uploads/rs/238/n8vhm36h/sort_asc.png) no-repeat center right;
+}
+.form-area,.form-province div{
+	width: 150px;
+	margin-left: 10px;
+}
+.form-province select,.form-area select{
+	width: 80%;
+}
+.form-province label,.form-area label{
+	margin-top: 7px;
+	float: left;
+	font-weight: normal;
+}
+td img{
+	height: 70px;
+}
+/* 登录 */
+.login_box {
+	float:none;
+	width:500px;padding-bottom:20px;margin:200px auto 0;
+	text-align:center;
+	border:1px solid @bordercolor;
+	.form-group {text-align:left;}
+}
+.prize-rule{
+	position: absolute;
+}
+.prize-rule .form-group{
+	overflow: hidden;
+}
+.prize-rule .form-group label{
+	text-align: right;
+	    padding-top: 7px;
+}
+.prize-rule .modal-dialog{
+	margin: 150px auto;
+}
+.parze-date input{
+	width: 47%;
+	display: inline-block;
+}
+.prize-rule .form-upload{
+	position: relative;
+}
+.prize-rule .form-upload label{
+	position: absolute;
+	width: 40%;
+	float: left;
+	top: 0;
+    left: 130px;
+    z-index: 5;
+    text-align: left;
+}
+.prize-rule img{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+.prize-rule .upload{
+	position: absolute;
+	width: 40%;
+	float: left;
+	top: 0;
+    left: 130px;
+    z-index: 10;
+    opacity: 0;
+}
+.prize-rule .submit {
+	opacity:0;
+}
+
+/*日历*/
+.datetimepicker th,.datetimepicker td{
+	text-align: center;
+	cursor: pointer;
+}
+.datetimepicker .datetimepicker-days td:hover{
+	background-color: #e3e1e1;
+	border-radius: 5px;
+}
+.datetimepicker td.active,.datetimepicker span.active{
+	background-color: #5bc0de;
+	color: #fff;
+	border-radius: 5px;
+}
+.datetimepicker td.active:hover,.datetimepicker span.active:hover{
+	background-color: #5bc0de!important;
+	border-radius: 5px;
+}
+.datetimepicker .datetimepicker-days td.old,.datetimepicker .datetimepicker-days td.new{
+	color: #999;
+}
+.datetimepicker .datetimepicker-days td.disabled,.datetimepicker .datetimepicker-days td.disabled:hover {
+    background: 0;
+    color: #999;
+    cursor: default;
+}
+.datetimepicker table tr td span.disabled, .datetimepicker table tr td span.disabled:hover {
+    background: 0;
+    color: #999;
+    cursor: default;
+}
+.datetimepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.datetimepicker .datetimepicker-months tbody span:hover,.datetimepicker .datetimepicker-years tbody span:hover{
+	background-color: #e3e1e1;
+	border-radius: 5px;
+}
+.datetimepicker .datetimepicker-hours span {
+    height: 26px;
+    line-height: 26px;
+}
+.datetimepicker td, .datetimepicker th{
+	text-align: center;
+    width: 16px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0;
+}
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    padding: 5px;
+}
+.datetimepicker th.switch {
+    width: 145px;
+}
+.datetimepicker .datetimepicker-minutes span {
+    height: 26px;
+    line-height: 26px;
+}
+
+/* loading样式 */
+.loading {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: rgba(0, 0, 0, .8);
+    z-index: 100000;
+    padding: 8px;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-radius: 5px;
+}
+
+@-webkit-keyframes loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes loading {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.loading:after {
+    display: block;
+    content: '';
+    background: url("data:image/svg+xml;charset=utf-8,<svg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'><defs><line%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F><%2Fdefs><g><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F><use%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F><%2Fg><%2Fsvg>") no-repeat 50% 50%;
+    background-size: 100%;
+    left: 50%;
+    top: 50%;
+    width: 34px;
+    height: 34px;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-animation: loading 1s steps(12, end) infinite;
+    animation: loading 1s steps(12, end) infinite;
+}
+
+.loading-x2 {
+    padding: 16px;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 10px;
+}
+
+.loading-x2:after {
+    width: 68px;
+    height: 68px;
+}
+
+.loading-overlay:before {
+    position: fixed;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.loading-hide {
+    display: none;
+}

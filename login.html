@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>嘉实多</title>
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/lavish-bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<div class="container">
+	<div class="col-xs-12 login_box">
+		<h3>用户登录</h3>
+		<div class="form-group">
+			<label for="">用户名</label>
+			<input type="text" class="form-control" placeholder="请输入用户名" ng-model="username">
+		</div>
+		<div class="form-group">
+			<label for="">密　码</label>
+			<input type="password" class="form-control" placeholder="请输入密码" ng-model="password">
+		</div>
+		<button class="btn btn-primary" ng-click="userLogin()">登录</button>
+	</div>
+</div>
+<script src="dist/js/common.js"></script>
+<script src="dist/js/login.js"></script>
+</body>
+</html>

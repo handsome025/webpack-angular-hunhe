@@ -1,0 +1,33 @@
+{
+  "name": "ued-pc",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "kavinguan",
+  "private": true,
+  "scripts": {
+    "watch": "webpack --w",
+    "build": "webpack --p",
+    "start": "webpack-dev-server --inline --no-info --open --port 8888",
+    "dev": "concurrently \"npm run watch\" \"npm run start\""
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "css-loader": "^0.27.3",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.10.1",
+    "glob": "^7.1.1",
+    "html-loader": "^0.4.5",
+    "image-webpack-loader": "^3.3.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.4",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "open-browser-webpack-plugin": "0.0.5",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}

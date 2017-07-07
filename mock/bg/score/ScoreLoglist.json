@@ -1,0 +1,116 @@
+{
+    "success": true,
+    "code": 1,
+    "msg": "成功",
+    "result": {
+        "total": 174,
+        "page_total": 12,
+        "datas": [
+            {
+                "Id": 174,
+                "OpenId": "f3c724141f444e4b8efbe1b3bc6565ce",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 14:44:34"
+            },
+            {
+                "Id": 173,
+                "OpenId": "597a086a4d254d6a966651a20a44e5a4",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 14:44:34"
+            },
+            {
+                "Id": 172,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 14:33:22"
+            },
+            {
+                "Id": 171,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 14:33:22"
+            },
+            {
+                "Id": 170,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 14:12:14"
+            },
+            {
+                "Id": 169,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 14:12:14"
+            },
+            {
+                "Id": 168,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 14:11:33"
+            },
+            {
+                "Id": 167,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 14:11:33"
+            },
+            {
+                "Id": 166,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 13:46:28"
+            },
+            {
+                "Id": 165,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 13:46:28"
+            },
+            {
+                "Id": 164,
+                "OpenId": "605559664e15437a87eb94aa98ec4b39",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 13:45:37"
+            },
+            {
+                "Id": 163,
+                "OpenId": "84af14b0f76744d49b258f31979c5dd8",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 13:45:37"
+            },
+            {
+                "Id": 162,
+                "OpenId": "f3c724141f444e4b8efbe1b3bc6565ce",
+                "Score": 5,
+                "Reason": "参加个人PK 5分台胜出",
+                "CreateTime": "2017/6/27 11:53:18"
+            },
+            {
+                "Id": 161,
+                "OpenId": "597a086a4d254d6a966651a20a44e5a4",
+                "Score": -5,
+                "Reason": "参加个人PK 5分台失败",
+                "CreateTime": "2017/6/27 11:53:18"
+            },
+            {
+                "Id": 160,
+                "OpenId": "597a086a4d254d6a966651a20a44e5a4",
+                "Score": 40,
+                "Reason": "参加极护一阶段课程",
+                "CreateTime": "2017/6/27 11:48:44"
+            }
+        ]
+    }
+}

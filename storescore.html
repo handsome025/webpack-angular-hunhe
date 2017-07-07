@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+	<title>嘉实多</title>
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/lavish-bootstrap.css">
+	<link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+<header>
+	<div class="pull-left title">
+		Castorl Online Micro-Marketing System
+	</div>
+	<div class="pull-right">
+		<div class="btn-group" role="group">
+			<a href="javascript:;" class="btn btn-default">{{adminname}}</a>
+			<a href="javascript:;" class="btn btn-default" ng-click="logout()">退出登录</a>
+		</div>
+	</div>
+</header>
+<aside>
+	<div class="menu-scroll-container scrollable default-skin">
+		<ul class="list-group">
+			<a href="{{menuItemData[0].link}}" class="list-group-item" ng-class="{'active':cpage==1}">
+				{{menuItemData[0].text}}
+			</a>
+			<li class="list-group-item" ng-show="!$first" ng-repeat="item in menuItemData">
+				{{item.text}}
+				<ul class="list-group">
+					<a href="{{item1.link}}" class="list-group-item" ng-repeat="item1 in item.childs" ng-class="{'active':cpage==item1.text}">{{item1.text}}</a>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</aside>
+<main>
+	<div class="container">
+		<div class="col-xs-12">
+			<input type="text" class="form-control pull-left input_1" placeholder="输入门店名称" ng-model="keyword">
+			<div class="form-group pull-left form-area">
+				<label>区域</label>
+				<select class="form-control" id="Region">
+					<option ng-repeat="item in Regionlist" value="{{item.Region}}">{{item.Region}}</option>
+				</select>
+			</div>
+			<div class="form-group pull-left form-province" data-toggle="distpicker">
+				<div class="pull-left">
+				<label>省份</label><select class="form-control" id="province">
+					<!-- <option ng-repeat="item in Provincelist" value="{{item.Province}}">{{item.Province}}</option> -->
+				</select>
+				</div>
+			<div class="pull-left">
+				<label>城市</label><select class="form-control" id="city">
+					<!-- <option ng-repeat="item in Citylist" value="{{item.City}}">{{item.City}}</option> -->
+				</select>
+				</div>
+			</div>
+			<button class="btn btn-primary" ng-click="searchEvent()">搜索</button>
+			<div class="pull-right">
+				<!-- <button class="btn btn-danger" ng-click="delCourseLogs()">删除</button> -->
+				<a href="javascript:;" class="btn btn-info" ng-click="exportStoreScore()">导出</a>
+			</div>
+		</div>
+		<div class="pull-left col-padding ml15">
+			排序
+			<a href="javascript:;" class="btn jifen  sorting_desc" id="1" ng-click="sorting($event)">总积分</a>
+			<a href="javascript:;" class="btn jifen  sorting_both sorting_desc" id="0" ng-click="sorting($event)">当月积分</a>
+		</div>
+		<div class="col-xs-12">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th><label><input type="checkbox" ng-model="checkall" ng-click="checkAllEvent()"> 全选</label></th>
+						<th>门店</th>
+						<th>区域</th>
+						<th>省份</th>
+						<th>城市</th>
+						<th>区县</th>
+						<th>总积分</th>
+						<th>当月积分</th>
+						<th>当月平均积分</th>
+						<th>门店人数</th>
+					</tr>
+				</thead>
+				<tbody id="table_list">
+					<tr ng-repeat="item in courselist" ng-click="tdclickEvent($index)">
+						<td><input type="checkbox" value="{{item.Id}}" ng-click="tdclickEvent($index)"></td>
+						<td>{{item.StoreName}}</td>
+						<td>{{item.Region}}</td>
+						<td>{{item.Province}}</td>
+						<td>{{item.City}}</td>
+						<td>{{item.Area}}</td>
+						<td>{{item.CScore}}</td>
+						<td>{{item.MScore}}</td>
+						<td>{{item.AvgMScore}}</td>
+						<td>{{item.StorePeople}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<nav aria-label="Page navigation" class="paging">
+			<ul class="pagination">
+				<li ng-class="{'disabled':curr_page==1}" ng-click="pageClick(1)">
+					<a href="javascript:;" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li ng-repeat="item in pagearr" ng-class="{'active':item==curr_page}" ng-click="pageClick(item)"><a href="javascript:;">{{item}}</a></li>
+				<li ng-class="{'disabled':curr_page==total_pages}" ng-click="pageClick(total_pages)">
+					<a href="javascript:;" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</main>
+<script src="dist/js/common.js"></script>
+<script src="dist/js/storescore.js"></script>
+</body>
+</html>
